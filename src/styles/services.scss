@@ -1,0 +1,201 @@
+#services-page {
+
+    header{
+        display: flex;
+        padding-left: 15%;
+        padding-right: 15%;
+        margin-bottom: 10rem;
+
+        background-color: black;
+
+        border-bottom: 1px solid rgb(248, 162, 1);
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            gap: 6rem;
+
+            .logo {
+                display: flex;
+                align-self: center;
+                justify-content: center;
+                width: 5rem;
+                height: 5rem;
+            }
+
+            .logo-description {
+                display: flex;
+                flex-direction: column;
+                
+        
+                h2 {
+                    font-size: 4rem;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 500;
+                    color: rgb(248, 162, 1);
+                }
+        
+                    > p {
+                        margin-left: 2rem;
+        
+                        color: white;
+                    }
+                }
+                
+                ul {
+                    display: flex;
+                    align-items: center;
+                    gap: 4rem;
+                    
+                    a {
+                        font-size: 1.8rem;
+                        font-weight: 400;
+                        font-family: 'Poppins', sans-serif;
+        
+                        color: white;
+                        text-decoration: none;
+    
+                        cursor: pointer;
+                        transition: .3s;
+    
+                        &:hover {
+                            color: rgb(156, 156, 156);
+                        }
+                    }
+
+                    > span {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-left: .8rem;
+        
+                        font-size: 1.4rem;
+                        font-family: 'Poppins', sans-serif;
+        
+                        color: rgb(231, 231, 231);
+                       }
+                    
+                }
+        
+    }
+        }
+
+    main {
+        align-items: stretch;
+
+        .container{
+            display: flex;
+
+            padding-left: 15%;
+            padding-right: 15%;
+
+            .cards {
+                display: grid;
+                gap: 2rem;
+                grid-template-columns: 1fr 1fr;
+                
+                .card {
+                    display: grid;
+
+                    padding-top: 4rem;
+                    padding-bottom: 5rem;
+                    padding-right: 3rem;
+                    padding-left: 3rem;
+
+                    box-shadow:  0rem 0rem 1.2rem rgb(20, 20, 20);
+
+                    img {
+                        width: 41rem;
+                        height: 30rem;
+                        object-fit: cover;
+                        
+                        border: 1px solid rgb(172, 98, 0);
+                    }
+
+                    .title {
+                        margin-top: 2rem;
+                        margin-bottom: 1rem;
+                        font-size: 2.2rem;
+                        font-weight: 500;
+                        color: black;
+                        font-family: 'Roboto', sans-serif;
+                    }
+
+                    > p {
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                        color: black;
+
+                        strong {
+                            color: rgb(172, 98, 0);
+                        }
+                    }
+                }
+                
+            }
+
+            .title {
+                display: flex;
+                flex: 2;
+                flex-direction: column;
+                align-items:stretch;
+                justify-content: center;
+    
+                max-width: 70%;
+    
+                h1{
+                    margin-bottom: 4rem;
+    
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 5rem;
+                    font-weight: 700;
+    
+                    color: black;
+                }
+    
+                p {
+                    font-size: 1.6rem;
+                }
+            }
+
+
+            @media(max-width: 1200px) {
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+
+            @media(max-width: 1100px) {
+                padding-right: 5%;
+                padding-left: 5%;
+
+                .cards {
+                    .card {
+                        img {
+                            max-width: 100%;
+                            max-height: 20rem;
+                        }
+                    }
+                }
+            }
+
+            @media(max-width: 700px) {
+                align-items: center;
+                justify-content: center;
+
+                .cards {
+                    grid-template-columns: 1fr;
+
+                    .card {
+                        
+                        img {
+                            max-width: 100%;
+                            max-height: 22rem;
+                            align-items: center;
+                            justify-self: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

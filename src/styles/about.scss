@@ -1,0 +1,160 @@
+#about-page {
+    background-color: black;
+    
+    header{
+        display: flex;
+        padding-left: 15%;
+        padding-right: 15%;
+        margin-bottom: 10rem;
+
+        border-bottom: 1px solid rgb(248, 162, 1);
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            gap: 6rem;
+
+            background-color: black;
+
+            .logo {
+                display: flex;
+                align-self: center;
+                justify-content: center;
+                width: 5rem;
+                height: 5rem;
+            }
+
+            .logo-description {
+                display: flex;
+                flex-direction: column;
+                
+                h2 {
+                    font-size: 4rem;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 500;
+
+                    color: rgb(248, 162, 1);
+                }
+        
+                    > p {
+                        margin-left: 2rem;
+        
+                        color: white;
+                    }
+                }
+                
+                ul {
+                    display: flex;
+                    align-items: center;
+                    gap: 4rem;
+                    
+                    a {
+                        font-size: 1.8rem;
+                        font-weight: 400;
+                        font-family: 'Poppins', sans-serif;
+        
+                        color: white;
+                        text-decoration: none;
+    
+                        cursor: pointer;
+                        transition: .3s;
+    
+                        &:hover {
+                            color: rgb(156, 156, 156);
+                        }
+                    }
+
+                    > span {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-left: .8rem;
+        
+                        font-size: 1.4rem;
+                        font-family: 'Poppins', sans-serif;
+        
+                        color: rgb(231, 231, 231);
+                       }
+                    
+                }
+        
+    }
+       
+}
+
+    main {
+        height: 100%;
+        padding-bottom: 3rem;
+        align-items: stretch;
+
+        .container{
+            display: flex;
+
+            padding-left: 15%;
+            padding-right: 15%;
+            
+            .title {
+                display: flex;
+                flex: 2;
+                flex-direction: column;
+                align-items:stretch;
+                justify-content: center;
+                
+                max-width: 100%;
+    
+                h1{
+                    margin-bottom: 4rem;
+    
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 5rem;
+                    font-weight: 500;
+    
+                    color: white;
+                }
+    
+                p {
+                    font-size: 1.6rem;
+
+                    line-height: 3.5rem;
+                }
+        }
+
+        }
+
+        @media(max-width: 785px) {
+
+            
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .title {
+                    max-width: 100%;
+                    
+                }
+                
+                aside {
+                    display: flex;
+
+                    margin-top: 2rem;
+                }
+
+                button {
+                    margin: 2rem;
+                }
+            }            
+        }
+
+        @media(max-width: 750px) {
+
+            height: 100%;
+
+            .container {
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    background-color:  rgb(228, 230, 229);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+
+    color: rgb(219, 214, 214);
+}
+
+.divider {
+    display: block;
+    height: 2px;
+    background: linear-gradient(
+        270deg,
+        rgb(212, 121, 1),
+        rgb(78, 78, 78),
+        );
+}
+
+footer {
+    .container {
+        display: flex;
+        padding-left: 15%;
+        padding-right: 15%;
+        margin-top: 5rem;
+        align-items: center;
+
+        min-height: 50vh;
+        
+        background-color: black;
+        
+        
+        justify-content: space-between;
+
+        .logo-description {
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                font-size: 4rem;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 500;
+
+                color: rgb(248, 162, 1);
+
+                 p {
+                    margin-left: 2rem;
+    
+                    color: white;
+                }
+            }
+        }
+
+        .footer-description {
+            width: 50%;
+
+            font-size: 1.6rem;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+
+            color: rgb(228, 228, 228);
+        }
+
+        .footer-links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                i {
+                    display: flex;
+                    margin-left: 2rem;
+                    font-size: 3rem;
+
+                    color: rgb(184, 184, 184);
+                    
+                    transition: .3s;
+                }
+                
+                :hover {
+                    transform: translateY(-.8rem);
+            }
+
+        }   
+    }
+    }
+
+    @media(max-width: 935px) {
+        .footer-description {
+            margin: 1.5rem;
+        }
+    }
+
+    @media(max-width: 726px) {
+        .container {
+            padding-top: 3rem;
+        }
+    }
+
+    @media(max-width: 700px) {
+        .container {
+            display: flex;
+            flex-direction: column;
+
+            .footer-description {
+                width: 100%;
+            }
+
+            .footer-links {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,196 @@
+#main-page {
+
+    header{
+        display: flex;
+        padding-left: 15%;
+        padding-right: 15%;
+        margin-bottom: 4rem;
+
+        background-color: black;
+        border-bottom: 1px solid rgb(248, 162, 1);
+
+        .logo {
+            display: flex;
+            align-self: center;
+            justify-content: center;
+            width: 5rem;
+            height: 5rem;
+        }
+        
+        .logo-description {
+            display: flex;
+            flex-direction: column;
+    
+            h2 {
+                font-size: 4rem;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 500;
+                color: rgb(248, 162, 1);
+            }
+    
+                > p {
+                    margin-left: 2rem;
+    
+                    color: white;
+                }
+            }
+            
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                gap: 6rem;
+    
+                ul {
+                    display: flex;
+                    align-items: center;
+                    gap: 4rem;
+                    
+                    a {
+                        font-size: 1.8rem;
+                        font-weight: 400;
+                        font-family: 'Poppins', sans-serif;
+        
+                        color: white;
+
+                        cursor: pointer;
+                        transition: .3s;
+
+                        &:hover {
+                            color: rgb(156, 156, 156);
+                        }
+                    }
+                    
+                        > span {
+                         display: flex;
+                         align-items: center;
+                         justify-content: center;
+                         margin-left: .8rem;
+         
+                         font-size: 1.4rem;
+                         font-family: 'Poppins', sans-serif;
+         
+                         color: rgb(231, 231, 231);
+                        }
+                     
+                }
+            }
+        
+        
+    }
+
+    main {
+        align-items: stretch;
+
+        .container{
+            display: flex;
+            height: 95vh;
+
+            padding-left: 15%;
+            padding-right: 15%;
+            
+            background-color: black;
+
+            .title {
+                display: flex;
+                flex: 2;
+                flex-direction: column;
+                align-items:stretch;
+                justify-content: center;
+    
+                max-width: 50%;
+    
+                h1{
+                    margin-bottom: 4rem;
+    
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 5rem;
+                    font-weight: 500;
+        
+                    color: white;
+                }
+    
+                p {
+                    font-size: 1.6rem;
+                    max-width: 43rem;
+                    padding: 1.6rem;
+                    
+                    color: rgb(22, 22, 22);
+                    background-color: rgb(214, 214, 214);
+                    border-radius: 2rem;
+                }
+        }
+
+            aside {         
+                display: flex;
+                flex: 1;
+                margin-left: 2rem;
+                
+                align-items: center;
+                justify-content: center;
+
+                    img {
+                        max-width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        
+                        border: 1px solid rgb(172, 98, 0);
+                        
+                    }
+                }
+
+            @media(max-width: 1040px) {
+                flex-direction: column;
+                align-items: center;
+                height: 100%;
+                padding-top: 2rem;
+                padding-left: 5%;
+                padding-right: 5%;
+
+                .title {
+                    min-width: 30rem;
+                 }
+                 
+                    aside {
+
+                        img {
+                            display: flex;
+                            max-width: 50rem;
+                            max-height: 30rem;
+                            width: 100%;
+                            height: 100%;
+
+                            margin-top: 1.5rem;
+                            margin-bottom: 1.5rem;
+                        }
+                    }
+                }
+        }
+
+        .container.white {
+            background-color: rgb(228, 230, 229);
+
+            .title {
+                display: flex;
+                flex: 2;
+                flex-direction: column;
+                align-items:stretch;
+                justify-content: center;
+               
+                max-width: 50%;
+    
+                h1{  
+                    color: rgb(0, 0, 0);
+                }
+                
+        }
+
+            
+
+        }
+
+            
+        
+    }
+
+   
+}
